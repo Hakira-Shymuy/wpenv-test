@@ -8,8 +8,8 @@ Ensure that Docker is running, then:
 
 ```sh
 $ cd /path/to/a/wordpress/plugin
-$ npm -g i @wordpress/env
-$ wp-env start
+$ npm -g i @hakira/env
+$ hakira-env start
 ```
 
 The local environment will be available at http://localhost:8888 (Username: `admin`, Password: `password`).
@@ -31,17 +31,17 @@ The database credentials are: user `root`, password `password`. For a comprehens
 After confirming that the prerequisites are installed, you can install `wp-env` globally like so:
 
 ```sh
-$ npm -g i @wordpress/env
+$ npm -g i @hakira/env
 ```
 
-You're now ready to use `wp-env`!
+You're now ready to use `hakira-env`!
 
 ### Installation as a local package
 
-If your project already has a package.json, it's also possible to use `wp-env` as a local package. First install `wp-env` locally as a dev dependency:
+If your project already has a package.json, it's also possible to use `hakira-env` as a local package. First install `hakira-env` locally as a dev dependency:
 
 ```sh
-$ npm i @wordpress/env --save-dev
+$ npm i @hakira/env --save-dev
 ```
 
 If you have also installed `wp-env` globally, running it will automatically execute the local, project-level package. Alternatively, you can execute `wp-env` via [`npx`](https://www.npmjs.com/package/npx), a utility automatically installed with `npm`.`npx` finds binaries like `wp-env` installed through node modules. As an example: `npx wp-env start --update`.
